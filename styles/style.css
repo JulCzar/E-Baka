@@ -1,1 +1,14 @@
 @charset "UTF-8";
+body {
+    background-image: url("../imgs/wallpaper.jpg");
+    background-color: rgb(18, 0, 61);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    color: white;
+}
+header#cabecalho nav ul{
+    background-color: rgba (255, 255, 255, 0.7);
+}
+header#cabecalho h1{
+    font-size: 60px;
+}
