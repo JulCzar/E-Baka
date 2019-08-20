@@ -1,21 +1,49 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Lexend+Mega&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
 body {
-    background-image: url("../imgs/wallpaper.jpg");
+    background-image: url("../imgs/wallpaper.png");
     background-color: rgb(18, 0, 61);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: auto;
     color: purple
 }
+header h1 {
+    font-family: 'Alfa Slab One', cursive;
+    text-align: center;
+    font-size: 60px;
+}
+header nav {
+    display: block;
+    float: right;
+    margin-top: -216px;
+}
+header nav ul li {
+    font-family: 'Lexend Mega', sans-serif;
+    display: inline-block;
+    background-color: rgba(255,255,255,.65);
+    padding: 7px;
+    margin: 3px;
+    transition-duration: .3s;
+    text-decoration: none;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+header nav ul li:hover {
+    background-color: white;
+}
+a {
+    text-decoration: none;
+    color: purple
+}
+a:hover {
+    text-decoration: underline;
+}
 div.whiteBox {
-    background-color: rgba(255,255,255,.3);
-    border-radius: 10px;
+    background-color: rgba(255,255,255,.65);
     margin: 75px 100px auto 150px;
 }
 div.whiteBox ul {
     display: block;
     float: right;
-}
-header#cabecalho h1{
-    font-size: 60px;
-    text-align: center;
 }
