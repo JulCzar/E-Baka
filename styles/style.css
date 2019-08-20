@@ -6,66 +6,111 @@ body {
     background-color: rgb(18, 0, 61);
     background-repeat: no-repeat;
     background-size: auto;
+    background-attachment: fixed;
 }
-h1 {
+
+h1, a {
     color: purple;
 }
+
 header h1 {
     font-family: 'Alfa Slab One', cursive;
     text-align: center;
     font-size: 60px;
 }
+
 header nav {
     display: block;
     float: right;
-    margin-top: -216px;
+    margin-top: -16%;
 }
-header nav ul li {
+
+header nav ul#menu li {
     font-family: 'Lexend Mega', sans-serif;
+    font-weight: 600;
     display: inline-block;
-    background-color: rgba(255,255,255,.65);
-    padding: 7px;
-    margin: 3px;
+    background-color: rgba(255, 255, 255, .65);
+    padding: 10px;
+    margin: 5px;
     transition-duration: .3s;
     text-decoration: none;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 }
-header nav ul li:hover {
+
+header nav ul#menu li:hover {
     background-color: white;
 }
+
 a {
     text-decoration: none;
-    color: purple
 }
-a:hover {
-    text-decoration: underline;
-}
+
 div.whiteBox {
-    background-color: rgba(255,255,255,.65);
-    margin-top: 75px;
+    background-color: rgba(255, 255, 255, .65);
+    margin: 75px 100px -10px 100px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 div.whiteBox ul {
     display: block;
     float: right;
 }
+
+section {
+    margin: auto 70px auto 70px;
+}
+
 section article h1 {
-    margin-left: 70px;
-    padding: 20px;
-    font-size: 20pt;    
+    display: inline-block;
+    color: white;
+    background-color: purple;
+    margin-right: 0px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    width: 250px;
+    box-sizing: border-box;
+    padding: 20px 15px 50px 50px;
+    font-size: 20pt;
 }
+
+section article h1 a {
+    color: white;
+}
+
 section article p {
+    display: inline-block;
+    background-color: rgba(255, 255, 255, .65);
+    margin-left: 0px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 20px;
     text-align: justify;
-    margin-left: 70px;
     text-indent: 50px;
-    width: 725px;
+    width: 525px;
 }
+
+ul.lista {
+    display: none;
+    float: none;
+    position: relative;
+}
+
+img {
+    display: inline-block;
+    width: 400px;
+    margin-right: 70px;
+    border-radius: 30px;
+    ;
+}
+
 footer {
+    clear: both;
     margin-top: 70px;
     margin-bottom: 0px;
 }
+
 footer h1 {
     font-size: 10pt;
     text-align: center;
