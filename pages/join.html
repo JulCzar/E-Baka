@@ -14,8 +14,8 @@
 
         <header id="cabecalho">
             <h1>Recrutamento</h1>
-            <nav>
-                <ul id="menu">
+            <nav id="navbar">
+                <ul>
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="#">Traduções</a></li>
                     <li><a href="../pages/team.html">Equipe</a></li>
@@ -27,7 +27,7 @@
             <h3>Estamos recrutando voluntários!</h3>
             <p>Não é fácil manter uma frequência alta com postagens de Light Novels, por isso toda ajuda é bem
                 vinda!!</p>
-            <ul class="lista">
+            <ul>
                 <li>Tradutores (Inglês e Japonês)</li>
                 <li>Revisores;</li>
                 <li>Editores (com experiência em redraws)</li>
@@ -35,7 +35,19 @@
             <p>Interessados contatem no e-mail: (o site ainda está em construção, se você está lendo isso e já tem
                 interesse em ajudar, deixe um comentário abaixo para eu avaliar a situação)</p>
             </article>
-            <a class="voltar" href="../index.html">&lt; Voltar</a>
+            <a id="botaovoltar" class="voltar" href="../index.html">&lt; Voltar</a>
+            <div id="disqus_thread"></div>
+            <script>
+                (function () {
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://e-baka-2.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>Por Favor ative o JavaScript no seu navegador para ver os comentários do site <a
+                    href="https://disqus.com/?ref_noscript">Feito por Disqus.</a></noscript>
+        </section>
         </section>
         <footer>
             <h1>Copyright&copy; JulCzar</h1>
