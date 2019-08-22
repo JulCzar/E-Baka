@@ -6,11 +6,15 @@
                                             /* corpo */
 body {
     background-image: linear-gradient(#8a7c9c, #9f91ad, #8a7c9c);
+    background-image: url(../imgs/wallpaper.webp);
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: fixed;
 }
 
+
+
+                                    /* EM CONSTRUÇÃO */
 div#fhitagi {
     background-image: url('../imgs/hitagi.png');
     background-repeat: no-repeat;
@@ -27,6 +31,8 @@ img#fhitagi {
     width: auto;
     background-attachment: fixed;
 }
+
+
 
                                             /* Cabeçalho */
 
