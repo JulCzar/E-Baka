@@ -24,7 +24,8 @@ header h1 {
 header nav {
     display: block;
     float: right;
-    margin-top: -18.5%;
+    margin-top: -220px;
+    padding: 0px;
 }
 
 header nav#navbar ul li {
@@ -100,8 +101,17 @@ img {
     ;
 }
 
+img#fhitagi {
+    display: block;
+    float: right;
+    width: 250px;
+    margin-bottom: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
                                             /* Postagens */
-section {
+main {
     margin: auto 50px auto 50px;
 }
 
@@ -129,7 +139,7 @@ section {
     font-family: 'Lexend Mega', sans-serif;
     color: white;
     width: 270px;
-    font-size: 10pt;
+    font-size: 8pt;
 
 }
 
