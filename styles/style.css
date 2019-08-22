@@ -19,7 +19,10 @@ div#fhitagi {
 
 img#fhitagi {
     position: absolute;
-    margin-top: 199px;
+    object-position: bottom;
+    align-items: baseline;
+    height: 480px;
+    width: auto;
 }
 
                                             /* Cabeçalho */
@@ -31,7 +34,7 @@ header h1 {
 }
 
                 /* Menu de Navegação superior direito */
-header nav {
+header nav#navbar {
     display: block;
     float: right;
     margin-top: -190px;
@@ -42,7 +45,7 @@ header nav#navbar ul li {
     /* organização relativa ao bloco (invisível) */
     display: inline-block;
     margin: 5px;
-    padding: 10px;
+    padding: 7px;
     text-decoration: none;
     transition-duration: .3s;
 
@@ -63,12 +66,17 @@ header nav#navbar ul li:hover {
 /* caixa branca em volta de todo o conteudo */
 .whiteBox {
     background-color: rgba(255, 255, 255, .65); 
-    margin: 75px 175px -10px 175px;
+    margin: 5% 10% 0% 10%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: absolute;
 }
 
+/* Postagens soltas */
+article {
+    padding: 15px;
+    margin: 10px;
+}
 /* tags isoladas */
 h1 a, h1.center {
     color: white;
@@ -89,6 +97,7 @@ a {
 a#botaovoltar:hover {
     background-color: rgba(128, 0, 128, 0.664);
 }
+
 time {
     vertical-align: sub ;
     font-size: 11pt;
@@ -106,6 +115,9 @@ p, h3{
     font-family: 'Lexend Deca', sans-serif;
 }
 
+li {
+    list-style-type: disc;
+}
 img {
     display: inline-block;
     width: 400px;
@@ -133,7 +145,7 @@ main {
     margin-right: 0px;
 
     /* organização relativa ao bloco (visível)   */
-    padding: 20px;
+    padding: 20px 40px 20px 20px;
     width: 20%;
     height: 150px;
     background-color: purple;
