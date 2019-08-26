@@ -38,7 +38,7 @@ img#fhitagi {
 header h1 {
     font-family: 'Alfa Slab One', cursive;
     text-align: center;
-    font-size: 60px;
+    font-size: 59px;
 }
 
                 /* Menu de Navegação superior direito */
@@ -85,6 +85,11 @@ header nav#navbar ul li:hover {
 article {
     padding: 15px;
     margin: 10px;
+}
+
+img.equipe {
+    border-radius: 50%;
+    width: 150px;
 }
 
 /* tags isoladas */
@@ -138,6 +143,11 @@ h1, nav ul li a, h3 {
     color: purple;
 }
 
+p {
+    text-indent: 50px;
+
+}
+
 p, h3{
     font-family: 'Lexend Deca', sans-serif;
 }
@@ -145,7 +155,8 @@ p, h3{
 li {
     list-style-type: disc;
     margin: 10px;
-    margin-left: 50px;
+    margin-left: 90px;
+    font-size: 15pt;
 }
 img {
     display: inline-block;
@@ -153,6 +164,17 @@ img {
     margin-right: 70px;
     border-radius: 30px;
     ;
+}
+
+img.fundo {
+    opacity: 0%;
+    width: 150px;
+    transition-duration: .3s;
+}
+
+img.fundo:hover {
+    opacity: 100%;
+    width: 300px;
 }
 
                                             /* Postagens */
@@ -207,7 +229,6 @@ main {
     line-height: 2;
     font-size: 13pt;
     text-align: justify;
-    text-indent: 50px;
 }
 
                                             /* Rodapé da página e associados */
