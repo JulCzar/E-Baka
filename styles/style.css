@@ -38,7 +38,7 @@ img#fhitagi {
 header h1 {
     font-family: 'Alfa Slab One', cursive;
     text-align: center;
-    font-size: 59px;
+    font-size: 55px;
 }
 
                 /* Menu de Navegação superior direito */
@@ -87,14 +87,84 @@ article {
     margin: 10px;
 }
 
-img.equipe {
+.equipe {
     border-radius: 50%;
     width: 150px;
+}
+
+/* Postagens */
+main {
+margin: auto 50px auto 50px;
+}
+
+.post {
+max-height: 500px;
+height: 260px;
+margin: 0px auto 0px 40px;
+overflow: hidden;
+}
+
+.title {
+    /* organização relativa ao bloco (invisível) */
+    display: block;
+    float: left;
+    margin-right: 0px;
+    overflow: hidden;
+
+    /* organização relativa ao bloco (visível)   */
+    background-origin: border-box;
+    padding: 30px 45px 30px 20px;
+    width: 25%;
+    height: 150px;
+    background-color: purple;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+
+    /* ajustes de fonte */
+    font-family: 'Lexend Mega', sans-serif;
+    font-weight: 900;
+    color: white;
+    font-size: 15pt;
+
+}
+
+.content {
+    /* organização relativa ao bloco (invisível */
+    display: inline-block;
+    margin-left: 0px;
+
+    /* organização relativa ao bloco (visível) */
+    padding: 30px;
+    background-color: white;
+    width: 60%;
+    height: 150px;
+    vertical-align: middle;
+
+    /* ajustes de fonte */
+    line-height: 2;
+    font-size: 13pt;
+    text-align: justify;
+}
+
+                                            /* Rodapé da página e associados */
+footer {
+    clear: both;
+    margin-top: 70px;
+    margin-bottom: 0px;
+}
+
+footer h1 {
+    font-size: 14pt;
+    font-weight: 700;
+    text-align: center;
+    border-top: 2px purple solid;
+    padding: 15px;
 }
 
 /* tags isoladas */
 h1 a, h1.center {
     color: white;
+    padding: 0;
 }
 
 div.content p {
@@ -157,91 +227,20 @@ img {
     border-bottom-left-radius: 20px;
     position: relative;
     margin: -30px 0px 0px -20px;
-    width: 334px;
-    height: 210px;
+    width: auto;
+    height: 250px;
     transition-duration: .3s;
     opacity: .5;
 }
 
 .fundo:hover{
     color: rgba(0, 0, 0, 0);
-    opacity: 1;
-    width: 450px;
-    height: 260px;
+    opacity: .7;
+    height: 300px;
 }
 
-figure figcaption {
-    overflow: hidden;
-    position: relative;
-    margin-top: -170px;
+figcaption {
+    position: absolute;
+    margin-top: -180px;
     width: 334px;
-}
-                                            /* Postagens */
-main {
-    margin: auto 50px auto 50px;
-}
-
-.post {
-    max-height: 500px;
-    height: 260px;
-    margin: 0px auto 0px 40px;
-    overflow: hidden;
-}
-
-.title {
-    /* organização relativa ao bloco (invisível) */
-    display: block;
-    float: left;
-    margin-right: 0px;
-
-    /* organização relativa ao bloco (visível)   */
-    /* background-image: url(../imgs/hitagi.png); */
-    background-origin: border-box;
-    padding: 30px 45px 30px 20px;
-    width: 25%;
-    height: 150px;
-    background-color: purple;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    object-fit: cover;
-
-    /* ajustes de fonte */
-    font-family: 'Lexend Mega', sans-serif;
-    font-weight: 900;
-    color: white;
-    font-size: 18pt;
-
-}
-
-.content {
-    /* organização relativa ao bloco (invisível */
-    display: inline-block;
-    margin-left: 0px;
-
-    /* organização relativa ao bloco (visível) */
-    padding: 30px;
-    background-color: white;
-    width: 60%;
-    height: 150px;
-    vertical-align: middle;
-
-    /* ajustes de fonte */
-    line-height: 2;
-    font-size: 13pt;
-    text-align: justify;
-}
-
-                                            /* Rodapé da página e associados */
-footer {
-    clear: both;
-    margin-top: 70px;
-    margin-bottom: 0px;
-}
-
-footer h1 {
-    font-size: 14pt;
-    font-weight: 700;
-    text-align: center;
-    border-top: 2px purple solid;
-    padding: 15px;
 }
