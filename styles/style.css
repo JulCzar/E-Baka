@@ -167,6 +167,18 @@ h1 a, h1.center {
     padding: 0;
 }
 
+.center {
+    display: block;
+    width: 75%;
+    transition-duration: 0.3s;
+}
+
+.title:hover .postwall {
+    background-color: rgba(128, 0, 128, 0.56);
+    padding: 12px;
+    border-radius: 20px;
+}
+
 div.content p {
     line-height: 1.5;
 }
@@ -222,25 +234,33 @@ img {
     object-fit: cover;
 }
 
-.fundo {
+.fundo{
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     position: relative;
-    margin: -30px 0px 0px -20px;
+    margin: -55px 0px 0px -20px;
     width: auto;
     height: 250px;
     transition-duration: .3s;
     opacity: .5;
 }
 
-.fundo:hover{
+.title:hover .fundo {
     color: rgba(0, 0, 0, 0);
-    opacity: .7;
+    opacity: 1;
     height: 300px;
 }
 
-figcaption {
+.postwall {
+    display: block;
+    width: 22%;
     position: absolute;
-    margin-top: -180px;
-    width: 334px;
+    margin-top: -190px;
+    transition-duration: 0.3s;
+}
+
+.leiamais {
+    display: block;
+    color: black;
+    float: right
 }
