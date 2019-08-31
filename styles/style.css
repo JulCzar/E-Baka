@@ -146,6 +146,34 @@ overflow: hidden;
     text-align: justify;
 }
 
+.fundo{
+    margin: -55px 0px 0px -20px;
+    width: auto;
+    height: 250px;
+    transition-duration: .3s;
+    opacity: .5;
+}
+
+.title:hover .fundo {
+    color: rgba(0, 0, 0, 0);
+    opacity: 1;
+    height: 300px;
+}
+
+.title:hover .postwall {
+    background-color: rgba(128, 0, 128, 0.56);
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.postwall {
+    display: block;
+    width: 20.9%;
+    position: absolute;
+    margin-top: -190px;
+    transition-duration: 0.3s;
+}
+
                                             /* Rodapé da página e associados */
 footer {
     clear: both;
@@ -162,7 +190,7 @@ footer h1 {
 }
 
 /* tags isoladas */
-h1 a, h1.center {
+h1 a, .center {
     color: white;
     padding: 0;
 }
@@ -226,34 +254,6 @@ img {
     width: 400px;
     margin-right: 70px;
     object-fit: cover;
-}
-
-.fundo{
-    margin: -55px 0px 0px -20px;
-    width: auto;
-    height: 250px;
-    transition-duration: .3s;
-    opacity: .5;
-}
-
-.title:hover .fundo {
-    color: rgba(0, 0, 0, 0);
-    opacity: 1;
-    height: 300px;
-}
-
-.title:hover .postwall {
-    background-color: rgba(128, 0, 128, 0.56);
-    padding: 12px;
-    border-radius: 20px;
-}
-
-.postwall {
-    display: block;
-    width: 20.9%;
-    position: absolute;
-    margin-top: -190px;
-    transition-duration: 0.3s;
 }
 
 .leiamais {
