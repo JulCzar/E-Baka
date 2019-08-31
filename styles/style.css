@@ -15,13 +15,13 @@ body {
 
 
                                     /* EM CONSTRUÇÃO */
-div#fhitagi {
-    background-image: url('../imgs/hitagi.png');
+#fhitagi {
+    background-image: url('../imgs/hitagiwpp.png');
     background-repeat: no-repeat;
-    margin-left: 50%;
+    margin-left: 0;
 }
 
-img#fhitagi {
+#imghitagi {
     display: block;
     float: right;
     box-sizing: 100%;
@@ -35,21 +35,21 @@ img#fhitagi {
 
                                             /* Cabeçalho */
 
-header h1 {
+#title {
     font-family: 'Alfa Slab One', cursive;
     text-align: center;
-    font-size: 55px;
+    font-size: 60px;
 }
 
                 /* Menu de Navegação superior direito */
-header nav#navbar {
+#navbar {
     display: block;
     float: right;
     margin-top: -194px;
     padding: 0px;
 }
 
-header nav#navbar ul li {
+#navbar ul li {
     /* organização relativa ao bloco (invisível) */
     display: inline-block;
     margin: 5px;
@@ -67,7 +67,7 @@ header nav#navbar ul li {
     font-weight: 600;
 }
 
-header nav#navbar ul li:hover {
+#navbar ul li:hover {
     background-color: white;
 }
 
@@ -173,12 +173,6 @@ h1 a, h1.center {
     transition-duration: 0.3s;
 }
 
-.title:hover .postwall {
-    background-color: rgba(128, 0, 128, 0.56);
-    padding: 12px;
-    border-radius: 20px;
-}
-
 div.content p {
     line-height: 1.5;
 }
@@ -235,9 +229,6 @@ img {
 }
 
 .fundo{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    position: relative;
     margin: -55px 0px 0px -20px;
     width: auto;
     height: 250px;
@@ -251,9 +242,15 @@ img {
     height: 300px;
 }
 
+.title:hover .postwall {
+    background-color: rgba(128, 0, 128, 0.56);
+    padding: 12px;
+    border-radius: 20px;
+}
+
 .postwall {
     display: block;
-    width: 22%;
+    width: 20.9%;
     position: absolute;
     margin-top: -190px;
     transition-duration: 0.3s;
