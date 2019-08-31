@@ -15,13 +15,13 @@ body {
 
 
                                     /* EM CONSTRUÇÃO */
-div#fhitagi {
-    background-image: url('../imgs/hitagi.png');
+#fhitagi {
+    background-image: url('../imgs/hitagiwpp.png');
     background-repeat: no-repeat;
-    margin-left: 50%;
+    margin-left: 0;
 }
 
-img#fhitagi {
+#imghitagi {
     display: block;
     float: right;
     box-sizing: 100%;
@@ -35,21 +35,21 @@ img#fhitagi {
 
                                             /* Cabeçalho */
 
-header h1 {
+#title {
     font-family: 'Alfa Slab One', cursive;
     text-align: center;
-    font-size: 55px;
+    font-size: 44pt;
 }
 
                 /* Menu de Navegação superior direito */
-header nav#navbar {
+#navbar {
     display: block;
     float: right;
     margin-top: -194px;
     padding: 0px;
 }
 
-header nav#navbar ul li {
+#navbar ul li {
     /* organização relativa ao bloco (invisível) */
     display: inline-block;
     margin: 5px;
@@ -67,7 +67,7 @@ header nav#navbar ul li {
     font-weight: 600;
 }
 
-header nav#navbar ul li:hover {
+#navbar ul li:hover {
     background-color: white;
 }
 
@@ -167,6 +167,12 @@ h1 a, h1.center {
     padding: 0;
 }
 
+.center {
+    display: block;
+    width: 75%;
+    transition-duration: 0.3s;
+}
+
 div.content p {
     line-height: 1.5;
 }
@@ -222,25 +228,36 @@ img {
     object-fit: cover;
 }
 
-.fundo {
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    position: relative;
-    margin: -30px 0px 0px -20px;
+.fundo{
+    margin: -55px 0px 0px -20px;
     width: auto;
     height: 250px;
     transition-duration: .3s;
     opacity: .5;
 }
 
-.fundo:hover{
+.title:hover .fundo {
     color: rgba(0, 0, 0, 0);
-    opacity: .7;
+    opacity: 1;
     height: 300px;
 }
 
-figcaption {
+.title:hover .postwall {
+    background-color: rgba(128, 0, 128, 0.56);
+    padding: 12px;
+    border-radius: 20px;
+}
+
+.postwall {
+    display: block;
+    width: 20.9%;
     position: absolute;
-    margin-top: -180px;
-    width: 334px;
+    margin-top: -190px;
+    transition-duration: 0.3s;
+}
+
+.leiamais {
+    display: block;
+    color: black;
+    float: right
 }
