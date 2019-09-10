@@ -58,7 +58,7 @@ body {
     transition-duration: .3s;
 
     /* organização relativa ao bloco (visível)   */
-    background-color: rgba(255, 255, 255, .65);
+    background-color: #ffffffa6;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
 
@@ -73,7 +73,7 @@ body {
 
 /* caixa branca em volta de todo o conteudo */
 .whiteBox {
-    background-color: rgba(255, 255, 255, .65);
+    background-color: #ffffffa6;
     width: 80%;
     margin: 5% 10% 0% 10%;
     border-top-left-radius: 20px;
@@ -156,13 +156,13 @@ overflow: hidden;
 }
 
 .title:hover .fundo {
-    color: rgba(0, 0, 0, 0);
+    color: #00000000;
     opacity: 1;
     height: 300px;
 }
 
 .title:hover .postwall {
-    background-color: rgba(128, 0, 128, 0.56);
+    background-color: #8000808f;
     padding: 12px;
     border-radius: 20px;
 }
@@ -219,7 +219,7 @@ a {
 }
 
 #botaovoltar:hover {
-    background-color: rgba(128, 0, 128, 0.664);
+    background-color: #800080a9;
 }
 
 time {
