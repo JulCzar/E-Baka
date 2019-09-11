@@ -40,19 +40,18 @@ body {
 }
 
                 /* Menu de Navegação superior direito */
-#navbar {
-    display: block;
-    float: right;
-    margin-top: -194px;
-    /* position: absolute;
-    top: 0; */
-    padding: 2px;
+#navbar ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-right: 15px;
 }
 
 #navbar ul li {
     /* organização relativa ao bloco (invisível) */
     display: inline-block;
     margin: 5px;
+    margin-top: 0;
     padding: 7px;
     text-decoration: none;
     transition-duration: .3s;
@@ -74,8 +73,8 @@ body {
 /* caixa branca em volta de todo o conteudo */
 .whiteBox {
     background-color: #ffffffa6;
-    width: 80%;
-    margin: 5% 10% 0% 10%;
+    width: 82%;
+    margin: 5% 9% 0% 9%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     position: absolute;
