@@ -3,10 +3,16 @@
 @import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Lexend+Deca&display=swap');
 
-/* corpo */
+/* Raiz da Pagina, declaração de variáveis */
+:root {
+    --roxo: #800080;
+    --bordaRedonda: 20px;
+}
 
+/* corpo da página */
 body {
-    background-image: linear-gradient(#8a7c9c, #9f91ad, #8a7c9c);
+    --roxofundo: #85739c;
+    background-image: linear-gradient(var(--roxofundo), #9f91ad, var(--roxofundo));
     background-repeat: no-repeat;
     background-size: auto;
     background-attachment: fixed;
@@ -21,7 +27,6 @@ body {
 
 
 /* MENU DE NAVEGAÇÃO SUPERIOR DIREITO */
-
 #navbar>ul {
     position: absolute;
     top: 0;
@@ -31,15 +36,14 @@ body {
 #navbar>ul>li {
     /* organização relativa ao bloco (invisível) */
     display: inline-block;
-    margin: 5px;
-    margin-top: 0;
+    margin: 0 5px;
     padding: 7px;
     text-decoration: none;
     transition-duration: .3s;
     /* organização relativa ao bloco (visível)   */
     background-color: #ffffffa6;
-    border-bottom-left-radius: 15px;
-    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: var(--bordaRedonda);
+    border-bottom-right-radius: var(--bordaRedonda);
     /* ajustes de fonte */
     font-family: 'Lexend Mega', sans-serif;
     font-weight: 600;
@@ -66,53 +70,41 @@ body {
     background-color: #ffffffa6;
     width: 82%;
     margin: 5% 9% 0% 9%;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: var(--bordaRedonda);
+    border-top-right-radius: var(--bordaRedonda);
     position: absolute;
 }
 
+/* Postagens */
 
-/* Postagens soltas */
+.pagina {
+    margin: 3%
+}
 
 article {
     padding: 15px;
     margin: 10px;
 }
 
-.equipe {
-    border-radius: 50%;
-    width: 150px;
-}
-
-
-/* Postagens */
-
-main {
-    margin: auto 50px auto 50px;
-}
-
 .post {
-    max-height: 5%;
-    margin: 0px auto 0px 40px;
-    overflow: hidden;
+    margin-left: 5%;
     margin-top: 25px;
 }
 
 .title {
     /* organização relativa ao bloco (invisível) */
-    display: block;
     float: left;
-    margin-right: 0px;
     overflow: hidden;
     text-transform: capitalize;
+    
     /* organização relativa ao bloco (visível)   */
-    background-origin: border-box;
     padding: 30px 45px 30px 20px;
     width: 25%;
     height: 150px;
-    background-color: purple;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    background-color: var(--roxo);
+    border-top-left-radius: var(--bordaRedonda);
+    border-bottom-left-radius: var(--bordaRedonda);
+
     /* ajustes de fonte */
     font-family: 'Lexend Mega', sans-serif;
     font-weight: 900;
@@ -120,20 +112,77 @@ main {
     font-size: 1.3em;
 }
 
+h1 a, .titulo {
+    color: white;
+    padding: 0;
+}
+
+time {
+    vertical-align: sub;
+    font-size: .75em;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 40px;
+}
+
 .content {
     /* organização relativa ao bloco (invisível */
     display: inline-block;
-    margin-left: 0px;
+
     /* organização relativa ao bloco (visível) */
     padding: 30px;
     background-color: white;
     width: 60%;
     height: 150px;
-    vertical-align: middle;
+
     /* ajustes de fonte */
     line-height: 2;
-    font-size: 13pt;
+    font-size: 1em;
     text-align: justify;
+}
+
+.content > p {
+    line-height: 1.5;
+}
+
+p {
+    text-indent: 50px;
+}
+
+p, h3 {
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+#botaovoltar {
+    background-color: var(--roxo);
+    color: white;
+    padding: 5px;
+    margin: 20px;
+    border-radius: var(--bordaRedonda);
+    transition-duration: 0.3s;
+}
+
+#botaovoltar:hover {
+    background-color: #800080a9;
+}
+
+img {
+    display: inline-block;
+    width: 400px;
+    margin-right: 70px;
+    object-fit: cover;
+}
+
+.equipe {
+    border-radius: 50%;
+    width: 150px;
+}
+
+li {
+    list-style-type: disc;
+    margin: 10px;
+    margin-left: 90px;
+    font-size: 1.2em;
 }
 
 .fundo {
@@ -145,14 +194,11 @@ main {
 }
 
 .title:hover .fundo {
-    color: #00000000;
     opacity: 1;
     width: 550px;
-    height: auto;
 }
 
 .postwall {
-    display: block;
     width: 20.9%;
     position: absolute;
     margin-top: -190px;
@@ -162,7 +208,7 @@ main {
 .title:hover .postwall {
     background-color: #8000808f;
     padding: 10px;
-    border-radius: 20px;
+    border-radius: var(--bordaRedonda);
 }
 
 
@@ -175,88 +221,21 @@ footer {
 }
 
 footer h1 {
-    font-size: 14pt;
+    font-size: 1.35em;
     font-weight: 700;
     text-align: center;
-    border-top: 2px purple solid;
+    border-top: 2px var(--roxo) solid;
     padding: 15px;
 }
 
 
 /* tags isoladas */
 
-h1 a,
-.center {
-    color: white;
-    padding: 0;
-}
-
-.center {
-    display: block;
-    width: 75%;
-    transition-duration: 0.3s;
-}
-
-.content p {
-    line-height: 1.5;
-}
-
 a {
     text-decoration: none;
 }
 
-#botaovoltar {
-    background-color: purple;
-    color: white;
-    padding: 5px;
-    border-radius: 10px;
-    transition-duration: 0.3s;
-}
-
-#botaovoltar:hover {
-    background-color: #800080a9;
-}
-
-time {
-    vertical-align: sub;
-    font-size: 11pt;
-    font-weight: 600;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 40px;
-}
-
-h1,
-nav ul li a,
-h3 {
+h1, nav > ul > li > a, h3 {
     padding: 25px;
-    color: purple;
-}
-
-p {
-    text-indent: 50px;
-}
-
-p,
-h3 {
-    font-family: 'Lexend Deca', sans-serif;
-}
-
-li {
-    list-style-type: disc;
-    margin: 10px;
-    margin-left: 90px;
-    font-size: 15pt;
-}
-
-img {
-    display: inline-block;
-    width: 400px;
-    margin-right: 70px;
-    object-fit: cover;
-}
-
-.leiamais {
-    display: block;
-    color: black;
-    float: right
+    color: var(--roxo);
 }
