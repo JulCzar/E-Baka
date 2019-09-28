@@ -103,7 +103,7 @@ article {
     text-transform: capitalize;
     
     /* organização relativa ao bloco (visível)   */
-    width: 27%;
+    width: 30%;
     height: 100%;
     background-color: var(--roxo);
     border-top-left-radius: var(--bordaRedonda);
