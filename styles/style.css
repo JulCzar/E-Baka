@@ -261,7 +261,7 @@ h1, nav > ul > li > a, h3 {
         background-color: #85739c;
     }
     .post {
-        margin: 10px;
+        margin: 35px;
         height: 13vh;
     }
     .title {
@@ -275,7 +275,7 @@ h1, nav > ul > li > a, h3 {
         margin: -10vh auto auto 1vh;
     }
     .content {
-        width: 55%;
+        width: 65%;
     }
     p, h3 {
         font-size: 1.3vh;
