@@ -7,14 +7,12 @@
 :root {
     --roxo: #800080;
     --bordaRedonda: 1.7vh;
-    --corborda: #85739c, #9f91ad, #85739c;
 }
 
 
 
 /* corpo da página */
 body {
-    background-color: var(--roxofundo);
     background: #85739c;
     background: -moz-linear-gradient(top,  #85739c 0%, #9f91ad 50%, #85739c 100%);
     background: -webkit-linear-gradient(top,  #85739c 0%,#9f91ad 50%,#85739c 100%);
