@@ -39,6 +39,7 @@ body {
 }
 .navMobile {
     font-family: 'Lexend Mega', sans-serif;
+    font-weight: 900;
     display: none;
     margin: .3vh;
     padding: 1vh;
