@@ -7,6 +7,7 @@
 :root {
     --roxo: #800080;
     --bordaRedonda: 1.7vh;
+    --branco: rgba(255, 255, 255, 0.651);
 }
 
 
@@ -55,7 +56,7 @@ body {
     text-decoration: none;
     transition-duration: .3s;
     /* organização relativa ao bloco (visível)   */
-    background-color: #ffffffa6;
+    background-color: var(--branco);
     border-bottom-left-radius: var(--bordaRedonda);
     border-bottom-right-radius: var(--bordaRedonda);
     /* ajustes de fonte */
@@ -82,7 +83,7 @@ body {
 /* caixa branca em volta de todo o conteudo */
 
 .whiteBox {
-    background-color: #ffffffa6;
+    background-color: var(--branco);
     width: 82%;
     height: auto;
     margin: 5% 9% 0% 9%;
