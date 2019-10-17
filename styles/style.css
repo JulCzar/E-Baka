@@ -20,7 +20,7 @@ body {
     background-size: auto;
     background-attachment: fixed;
 }
-
+/* Imagem que segue o redimensionamento da página */
 #imghitagi {
     position: fixed;
     bottom: 0;
@@ -104,6 +104,25 @@ body {
     height: 23vh;
 }
 
+.postagem {
+    margin: auto 15vh;
+}
+
+.conteudoPostagem {
+    text-align: justify;
+    font-size: 2vh;
+    line-height: 2;
+    margin-bottom: 2vh;
+}
+
+.download:hover {
+    text-decoration: underline;
+}
+.postImg {
+    border-top-left-radius: var(--bordaRedonda);
+    float: left;
+}
+
 .artigos {
     padding: 0;
     margin: 2%;
@@ -171,11 +190,19 @@ p, h3 {
     font-size: 2vh
 }
 
+.leiamais {
+    text-decoration: none;
+    color: var(--roxo);
+    display: block;
+    float: right;
+}
+
 #botaovoltar {
+    height: 2.5vh;
+    width: 5vh;
+    fill: var(--roxo);
     background-color: var(--roxo);
-    color: white;
     padding: 1vh;
-    margin: 5vh;
     border-radius: var(--bordaRedonda);
     transition-duration: 0.3s;
 }
@@ -238,16 +265,13 @@ footer h1 {
 /* tags isoladas */
 
 a {
+    color: var(--roxo);
     text-decoration: none;
 }
 
 h1, nav > ul > li > a, h3 {
     padding: 3vh;
     color: var(--roxo);
-}
-
-#disqus_thread {
-    margin: 5vh;
 }
 
 @media only screen and (max-width: 840px) {
@@ -380,6 +404,10 @@ h1, nav > ul > li > a, h3 {
         display: block;
         width: 95%;
         height: 20vh;
+    }
+    .leiamais {
+        font-size: 2.5vh;
+        border: 2px 2px solid var(--roxo);
     }
     .content > p {
         font-size: 2.3vh;
