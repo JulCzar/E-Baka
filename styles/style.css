@@ -104,8 +104,12 @@ body {
     height: 23vh;
 }
 
+.content {
+    box-shadow: 1vh 1vh 5vh #0000004f;
+}
+
 .postagem {
-    margin: auto 15vh;
+    margin: auto 6.25vh;
 }
 
 .conteudoPostagem {
@@ -119,6 +123,7 @@ body {
     text-decoration: underline;
 }
 .postImg {
+    transform: translateX(3vh);
     border-top-left-radius: var(--bordaRedonda);
     float: left;
 }
@@ -133,6 +138,7 @@ body {
     float: left;
     overflow: hidden;
     text-transform: capitalize;
+    box-shadow: 1vh 1vh 5vh #0000004f;
     
     /* organização relativa ao bloco (visível)   */
     max-width: 40vh;
@@ -217,10 +223,23 @@ img {
     margin-right: 70px;
     object-fit: cover;
 }
-
+figure {
+    display: inline-block;
+}
+.envolvidos {
+    flex: 1;
+    align-items: center;
+    justify-items: space-between;;
+}
 .equipe {
     border-radius: 50%;
     width: 20vh;
+    transition: 1s;
+}
+
+.equipe:hover {
+    transform: scale(2.5);
+    box-shadow: 1px 1px 1px 9999px #000000a9;
 }
 
 li {
