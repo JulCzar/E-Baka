@@ -4,6 +4,8 @@
     margin: auto 6.25vh;
 }
 .postImg {
+    width: 65vh;
+    padding: 0 5vh 2vh 0;
     transform: translateX(3vh);
     border-top-left-radius: var(--bordaRedonda);
     float: left;
@@ -25,4 +27,9 @@
 
 #botaovoltar:hover {
     background-color: #800080a9;
+}
+
+p {
+    font-size: 3vh;
+    line-height: 1.5;
 }
