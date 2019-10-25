@@ -1,0 +1,129 @@
+@charset "UTF-8";
+
+.postwall {
+    width: 20.9%;
+    position: absolute;
+    margin: -23vh auto auto 2vh;
+    transition-duration: 0.3s;
+}
+
+.fundo {
+    width: 50vh;
+    height: auto;
+    transition-duration: .3s;
+    opacity: .5;
+}
+
+.artigos {
+    padding: 0;
+    margin: 2%;
+}
+
+.post {
+    margin-left: 5%;
+    margin-bottom: 5%;
+    height: 23vh;
+}
+
+.content {
+    box-shadow: 1vh 1vh 5vh #0000004f;
+}
+
+.titulo {
+    color: white;
+    padding: 0;
+}
+
+.leiamais {
+    text-decoration: none;
+    color: var(--roxo);
+    display: block;
+    float: right;
+}
+
+time {
+    vertical-align: sub;
+    font-size: 2vh;
+    font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    /* organização relativa ao bloco (invisível */
+    display: inline-block;
+
+    /* organização relativa ao bloco (visível) */
+    box-sizing: border-box;
+    padding: 3%;
+    background-color: white;
+    width: 67%;
+    height: 100%;
+
+    /* ajustes de fonte */
+    font-size: 2vh;
+    text-align: justify;
+}
+
+.content > p {
+    line-height: 1;
+}
+@media only screen and (max-width: 840px) {
+    .post {
+        margin: 5vh 0 2vh 2vh;
+        height: 13vh;
+    }
+    time {
+        font-size: 1.3vh
+    }
+    .fundo {
+        width: 23vh
+    }
+    .postwall {
+        margin: -10vh auto auto 1vh;
+    }
+    .content {
+        width: 65%;
+    }
+    .postwall {
+        font-size: 1vh;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .container {
+        height: auto;
+    }
+    .post {
+        height: auto;
+    }
+    .title {
+        clear: both;
+        float: none;
+        width: 95%;
+        max-width: none;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: var(--bordaRedonda);
+    }
+    .postwall {
+        margin-top: -17vh;
+        font-size: 2vh;
+    }
+    .fundo {
+        width: 100%;
+        height: 25vh
+    }
+    .content {
+        clear: both;
+        display: block;
+        width: 95%;
+        height: 20vh;
+    }
+    .leiamais {
+        font-size: 2.5vh;
+        border: 2px 2px solid var(--roxo);
+    }
+    .content > p {
+        font-size: 2.3vh;
+        font-weight: 100;
+    }
+}

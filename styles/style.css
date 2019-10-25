@@ -11,14 +11,11 @@
 }
 
 
-
 /* corpo da página */
 body {
-    background: #85739c;
-    background: linear-gradient(to bottom,  #85739c,#9f91ad,#85739c); 
-    background-repeat: no-repeat;
-    background-size: auto;
+    background-image: linear-gradient(#85739c,#9f91ad,#85739c);
     background-attachment: fixed;
+
 }
 /* Imagem que segue o redimensionamento da página */
 #imghitagi {
@@ -98,41 +95,6 @@ body {
     margin: 3%
 }
 
-.post {
-    margin-left: 5%;
-    margin-bottom: 5%;
-    height: 23vh;
-}
-
-.content {
-    box-shadow: 1vh 1vh 5vh #0000004f;
-}
-
-.postagem {
-    margin: auto 6.25vh;
-}
-
-.conteudoPostagem {
-    text-align: justify;
-    font-size: 2vh;
-    line-height: 2;
-    margin-bottom: 2vh;
-}
-
-.download:hover {
-    text-decoration: underline;
-}
-.postImg {
-    transform: translateX(3vh);
-    border-top-left-radius: var(--bordaRedonda);
-    float: left;
-}
-
-.artigos {
-    padding: 0;
-    margin: 2%;
-}
-
 .title {
     /* organização relativa ao bloco (invisível) */
     float: left;
@@ -155,36 +117,9 @@ body {
     font-size: 2.5vh;
 }
 
-h1 a, .titulo {
+h1 a {
     color: white;
     padding: 0;
-}
-
-time {
-    vertical-align: sub;
-    font-size: 2vh;
-    font-weight: 300;
-    font-family: Arial, Helvetica, sans-serif;
-}
-
-.content {
-    /* organização relativa ao bloco (invisível */
-    display: inline-block;
-
-    /* organização relativa ao bloco (visível) */
-    box-sizing: border-box;
-    padding: 3%;
-    background-color: white;
-    width: 67%;
-    height: 100%;
-
-    /* ajustes de fonte */
-    font-size: 2vh;
-    text-align: justify;
-}
-
-.content > p {
-    line-height: 1;
 }
 
 p {
@@ -196,71 +131,11 @@ p, h3 {
     font-size: 2vh
 }
 
-.leiamais {
-    text-decoration: none;
-    color: var(--roxo);
-    display: block;
-    float: right;
-}
-
-#botaovoltar {
-    height: 2.5vh;
-    width: 5vh;
-    fill: var(--roxo);
-    background-color: var(--roxo);
-    padding: 1vh;
-    border-radius: var(--bordaRedonda);
-    transition-duration: 0.3s;
-}
-
-#botaovoltar:hover {
-    background-color: #800080a9;
-}
-
-img {
-    display: inline-block;
-    width: 400px;
-    margin-right: 70px;
-    object-fit: cover;
-}
-figure {
-    display: inline-block;
-}
-.envolvidos {
-    flex: 1;
-    align-items: center;
-    justify-items: space-between;;
-}
-.equipe {
-    border-radius: 50%;
-    width: 20vh;
-    transition: 1s;
-}
-
-.equipe:hover {
-    transform: scale(2.5);
-    box-shadow: 1px 1px 1px 9999px #000000a9;
-}
-
 li {
     list-style-type: disc;
     margin: 2vh;
     margin-left: 15vh;
     font-size: 2vh;
-}
-
-.fundo {
-    width: 50vh;
-    height: auto;
-    transition-duration: .3s;
-    opacity: .5;
-}
-
-.postwall {
-    width: 20.9%;
-    position: absolute;
-    margin: -23vh auto auto 2vh;
-    transition-duration: 0.3s;
 }
 
 
@@ -294,6 +169,11 @@ h1, nav > ul > li > a, h3 {
 }
 
 @media only screen and (max-width: 840px) {
+    .title {
+        width: 35%;
+        max-width: 20vh;
+    }
+
     #imghitagi {
         max-width: 80%;
         width: 50vh;
@@ -309,6 +189,11 @@ h1, nav > ul > li > a, h3 {
         vertical-align: middle;
         padding: 1vh;
     }
+
+    p, h3 {
+        font-size: 1.3vh;
+    }
+
     .whiteBox {
 	    display: block;
         border-top-left-radius: 2vh;
@@ -318,32 +203,6 @@ h1, nav > ul > li > a, h3 {
         margin-left: 3%;
 	    margin-right: 3%;
         margin-bottom: 0;
-    }
-    .post {
-        margin: 5vh 0 2vh 2vh;
-        height: 13vh;
-    }
-    .title {
-        width: 35%;
-        max-width: 20vh;
-    }
-    time {
-        font-size: 1.3vh
-    }
-    .fundo {
-        width: 23vh
-    }
-    .postwall {
-        margin: -10vh auto auto 1vh;
-    }
-    .content {
-        width: 65%;
-    }
-    p, h3 {
-        font-size: 1.3vh;
-    }
-    .postwall {
-        font-size: 1vh;
     }
 }
 
@@ -363,6 +222,7 @@ h1, nav > ul > li > a, h3 {
 @media only screen and (max-width: 550px){
     body {
         background: #85739c;
+        background-attachment: unset;
     }
     
     #navMob {
@@ -395,42 +255,6 @@ h1, nav > ul > li > a, h3 {
     }
     #title {
         margin-top: 5vh;
-    }
-    .container {
-        height: auto;
-    }
-    .post {
-        height: auto;
-    }
-    .title {
-        clear: both;
-        float: none;
-        width: 95%;
-        max-width: none;
-        border-bottom-left-radius: 0;
-        border-top-right-radius: var(--bordaRedonda);
-    }
-    .postwall {
-        margin-top: -17vh;
-        font-size: 2vh;
-    }
-    .fundo {
-        width: 100%;
-        height: 25vh
-    }
-    .content {
-        clear: both;
-        display: block;
-        width: 95%;
-        height: 20vh;
-    }
-    .leiamais {
-        font-size: 2.5vh;
-        border: 2px 2px solid var(--roxo);
-    }
-    .content > p {
-        font-size: 2.3vh;
-        font-weight: 100;
     }
     footer {
         clear: none;

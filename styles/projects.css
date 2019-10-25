@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+figure {
+    display: inline-block;
+}
+.projetos {
+    height: 60vh;
+    width: 42.5vh;
+    margin: auto 5vh auto 5vh;
+    border-radius: var(--bordaRedonda);
+    border: 5px solid var(--roxo);
+}
+
+.legendas {
+    margin: auto 10vh;
+}
