@@ -1,9 +1,9 @@
 @charset "UTF-8";
-
 .envolvidos {
     flex: 1;
     align-items: center;
-    justify-items: space-between;;
+    justify-items: space-between;
+    ;
 }
 
 .equipe {
@@ -29,7 +29,7 @@ img {
     object-fit: cover;
 }
 
-figure:hover > .dados {
+figure:hover>.dados {
     background: #ffffffbd;
     position: relative;
     transform: translateX(-12vh);
@@ -41,29 +41,31 @@ figure:hover > .dados {
     font-size: 5vh;
     font-weight: 900;
 }
+
 .apresentacao {
     padding: 1vh;
 }
-figure:hover > .equipe {
+
+figure:hover>.equipe {
     border-radius: 0;
     transform: scale(2.5);
-    box-shadow: 1px 1px 1px 9999px #000000a9;
+    box-shadow: 1px 1px 1px 500px #000000a9;
 }
 
 main {
     margin-bottom: 40vh;
 }
+
 @media only screen and (max-width: 840px) {
-    figure:hover > .equipe {
+    figure:hover>.equipe {
         transform: scale(2) translateX(5vh);
     }
-    figure:hover > .dados {
+    figure:hover>.dados {
         transform: translateX(5vh) translateY(-10vh);
     }
-
 }
-@media only screen and (max-width: 550px) {
 
+@media only screen and (max-width: 550px) {
     .equipe {
         margin-bottom: 25px;
     }

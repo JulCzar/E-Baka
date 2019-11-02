@@ -1,14 +1,18 @@
 @charset "UTF-8";
-
 .postagem {
     margin: auto 6.25vh;
 }
+
 .postImg {
     width: 65vh;
     padding: 0 5vh 2vh 0;
     transform: translateX(3vh);
     border-top-left-radius: var(--bordaRedonda);
     float: left;
+}
+
+.postImg:hover {
+    transform: translateX(5px) translateY(5px);
 }
 
 .download:hover {
