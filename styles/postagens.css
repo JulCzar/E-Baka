@@ -6,7 +6,7 @@
 .postImg {
     width: 65vh;
     padding: 0 5vh 2vh 0;
-    transform: translateX(3vh);
+    transform: translateY(1.5vh);
     border-top-left-radius: var(--bordaRedonda);
     float: left;
 }
@@ -25,6 +25,7 @@
     fill: var(--roxo);
     background-color: var(--roxo);
     padding: 1vh;
+    margin-top: 2vh;
     border-radius: var(--bordaRedonda);
     transition-duration: 0.3s;
 }
@@ -36,4 +37,22 @@
 p {
     font-size: 3vh;
     line-height: 1.5;
+}
+
+@media only screen and (max-width: 550px) {
+    #title {
+        font-size: 4vh;
+    }
+    .subtitulo {
+        font-size: 2vh;
+        text-indent: 0;
+        padding: 2vh 0;
+    }
+    .postImg {
+        width: 75vmin;
+        border-radius: 2vh;
+    }
+    #botaovoltar {
+        transform: translateX(-3vh);
+    }
 }

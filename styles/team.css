@@ -32,7 +32,7 @@ img {
 figure:hover>.dados {
     background: #ffffffbd;
     position: relative;
-    transform: translateX(-12vh);
+    transform: translateX(-8vh) translateY(-15vh);
     display: block;
     color: black;
 }
@@ -50,6 +50,8 @@ figure:hover>.equipe {
     border-radius: 0;
     transform: scale(2.5);
     box-shadow: 1px 1px 1px 500px #000000a9;
+    width: 50vh;
+    box-shadow: 1px 1px 1px 9999px #000000a9;
 }
 
 main {
