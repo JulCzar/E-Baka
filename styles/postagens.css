@@ -11,10 +11,6 @@
     float: left;
 }
 
-.postImg:hover {
-    transform: translateX(5px) translateY(5px);
-}
-
 .download:hover {
     text-decoration: underline;
 }

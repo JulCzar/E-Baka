@@ -97,6 +97,7 @@ body {
     border-top-left-radius: var(--bordaRedonda);
     border-top-right-radius: var(--bordaRedonda);
     position: absolute;
+    transition-duration: .5s;
 }
 
 
