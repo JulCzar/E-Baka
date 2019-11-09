@@ -8,11 +8,14 @@
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/team.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="icon" href="../imgs/favicon.png">
     <title>E-Baka</title>
 </head>
 
 <body>
+    <div id="modal" class="modal">
+    </div>
     <nav id="navbar">
         <ul>
             <li><a href="../index.html">Home</a></li>
@@ -42,26 +45,22 @@
                 <article class="postagem envolvidos">
                     <h3>Todos os envolvidos com os Projetos e manutenção do site</h3>
                     <figure>
-                        <img class="equipe" src="../imgs/Equipe/Czar.jpg"
+                        <div></div>
+                        <img name="Czar" onclick="modal(this)" class="equipe" src="../imgs/Equipe/Czar.jpg"
                             alt="Imagem do Tradutor e Revisor, também dono do site, Czar">
-                        <figcaption class="dados">
-                            <h1 class="nome">Júlio César</h1>
-                            <p class="apresentacao">Tradutor, editor, revisor e dono do site.</p>
+                        <figcaption class="legenda">Tradutor, Revisor, Editor e dono do site.
                         </figcaption>
                     </figure>
                     <figure>
-                        <img class="equipe" src="../imgs/Equipe/Hayate.jpg" alt="Imagem do Tradutor e Revisor, Hayate">
-                        <figcaption class="dados">
-                            <h1 class="nome">Hayate</h1>
-                            <p class="apresentacao">Tradutor e revisor.</p>
+                        <img name="Hayate" onclick="modal(this)" class="equipe" src="../imgs/Equipe/Hayate.jpg"
+                            alt="Imagem do Tradutor e Revisor, Hayate">
+                        <figcaption class="legenda">Tradutor e Revisor da scan.
                         </figcaption>
                     </figure>
                     <figure>
-                        <img class="equipe" src="../imgs/Equipe/Kevster.jpg"
+                        <img name="Kevster" onclick="modal(this)" class="equipe" src="../imgs/Equipe/Kevster.jpg"
                             alt="Imagem do Editor, Web Designer e Programador, Kevster">
-                        <figcaption class="dados">
-                            <h1 class="nome">Kevster</h1>
-                            <p class="apresentacao">Editor.</p>
+                        <figcaption class="legenda">Editor.
                         </figcaption>
                     </figure>
                 </article>
@@ -72,5 +71,6 @@
         </footer>
     </div>
 </body>
+<script src="../js/index.js"></script>
 
 </html>

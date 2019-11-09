@@ -1,15 +1,71 @@
 @charset "UTF-8";
+
+.modal {
+    transition-duration: .5s;
+    display: none;
+    border-radius: var(--bordaRedonda);
+    background-color: var(--branco);
+    font-family: 'Alfa Slab One', cursive;
+    width: 60vmax;
+    position: fixed;
+    top: 20vmin;
+    left: 20vmax;
+    z-index: 2;
+    color: black;
+    box-shadow: 1vh 1vh 10vmax 100vmax rgba(0, 0, 0, 0.541);
+}
+
+#fechar {
+    transform: translateX(5vh) translateY(-5vh);
+    padding: 2vh;
+    float: right;
+}
+.content {
+    padding: 5vmin;
+}
+
+#foto{
+    border-radius: var(--bordaRedonda);
+    float: left;
+    margin-right: 5vh;
+    width: 30vh;
+}
+
+#nome{
+    color: var(--roxo);
+    text-indent: 6vh;
+    font-size: 7vh;
+    font-weight: bold;
+}
+#descricao{
+    text-indent: 4vh;
+    text-align: justify;
+    font-family: 'Lexend Mega', sans-serif;
+    margin-top: 5vh;
+}
+#endFloat {
+    clear: both;
+}
+
+.legenda {
+    display: none;
+}
+
 .envolvidos {
     flex: 1;
     align-items: center;
     justify-items: space-between;
-    ;
 }
 
 .equipe {
+    margin-left: 10vh;
+    margin-bottom: 3vh;
     border-radius: 50%;
     width: 20vh;
     transition: 1s;
+}
+
+.equipe:first-child {
 }
 
 figure {
@@ -18,7 +74,7 @@ figure {
 }
 
 .dados {
-    display: none;
+    opacity: 0;
     transition: 1s;
 }
 
@@ -27,14 +83,6 @@ img {
     width: 400px;
     margin-right: 70px;
     object-fit: cover;
-}
-
-figure:hover>.dados {
-    background: #ffffffbd;
-    position: relative;
-    transform: translateX(-8vh) translateY(-15vh);
-    display: block;
-    color: black;
 }
 
 .nome {
@@ -46,32 +94,40 @@ figure:hover>.dados {
     padding: 1vh;
 }
 
-figure:hover>.equipe {
-    border-radius: 0;
-    transform: scale(2.5);
-    box-shadow: 1px 1px 1px 500px #000000a9;
-    width: 50vh;
-    box-shadow: 1px 1px 1px 9999px #000000a9;
-}
-
 main {
     margin-bottom: 40vh;
 }
 
 @media only screen and (max-width: 840px) {
-    figure:hover>.equipe {
-        transform: scale(2) translateX(5vh);
+    .modal {
+        width: 70vmin;
+        left: 15vmin;
     }
-    figure:hover>.dados {
-        transform: translateX(5vh) translateY(-10vh);
+
+    #foto {
+        width: 15vh;
+        margin-right: 1.5vh;
+    }
+    #nome {
+        font-size: 4vh;
+    }
+    #descricao {
+        text-indent: 2vh;
     }
 }
 
 @media only screen and (max-width: 550px) {
-    .equipe {
-        margin-bottom: 25px;
+    .modal {
+        left: 7.5vmin;
+        width: 85vmin;
     }
-    main {
-        margin-bottom: 0;
+    #foto {
+        margin-right: .8vh;
+    }
+    #nome {
+        font-size: 3vh;
+    }
+    #descricao {
+        font-size: 1.5vh;
     }
 }
