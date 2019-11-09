@@ -1,14 +1,26 @@
 let modalAtivo = false
+const modal = document.getElementById("modal")
+document.addEventListener("click", event)
 
-function modal(item) {
+function event(){
+    if (!modalAtivo){
+        return
+    }else {
+        modal.children[0].remove()
+        modal.style = "display: none"
+        modalAtivo = false
+        console.log(modal)
+    }
+}
+
+function criaModal(item) {
     if (!modalAtivo) {
         modalAtivo = true
+        modal.style = "display: block"
         let foto = item.src
         let nome = item.name
         let descricao = item.parentElement
-        let modal = document.getElementById("modal")
         descricao = descricao.textContent
-        modal.style = "display: block"
         modal.insertAdjacentHTML('beforeend', `
         <div class="content">
         <div id="fechar"><a onclick='fecharModal(this)' href='#'><i class="material-icons">clear</i></a></div>
@@ -22,7 +34,6 @@ function modal(item) {
 
 function fecharModal(item){
     modalAtivo = false
-    let modal = document.getElementById("modal")
     modal.style = "display: none"
     item.parentElement.parentElement.remove()
 }
