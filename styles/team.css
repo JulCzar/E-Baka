@@ -98,10 +98,18 @@ main {
     margin-bottom: 40vh;
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 840px){
+    #title {
+        font-size: 3vh;
+        padding-bottom: 0;
+    }
     .modal {
         width: 70vmin;
         left: 15vmin;
+    }
+    
+    #fechar {
+        transform: translateX(3.5vh) translateY(-3.5vh);
     }
 
     #foto {
@@ -109,7 +117,7 @@ main {
         margin-right: 1.5vh;
     }
     #nome {
-        font-size: 4vh;
+        font-size: 3vh;
     }
     #descricao {
         text-indent: 2vh;
@@ -121,11 +129,12 @@ main {
         left: 7.5vmin;
         width: 85vmin;
     }
+    
     #foto {
         margin-right: .8vh;
     }
     #nome {
-        font-size: 3vh;
+        font-size: 2.5vh;
     }
     #descricao {
         font-size: 1.5vh;

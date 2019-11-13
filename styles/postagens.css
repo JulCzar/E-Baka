@@ -4,13 +4,23 @@
 }
 
 .postImg {
-    width: 65vh;
+    width: auto;
+    max-height: 85vh;
     padding: 0 5vh 2vh 0;
     transform: translateY(1.5vh);
     border-top-left-radius: var(--bordaRedonda);
     float: left;
+    margin-bottom: 10vh;
+}
+.titulo {
+    font-size: 5vh;
+    text-align: center;
 }
 
+
+.linksDownload {
+    text-align: center;
+}
 .download:hover {
     text-decoration: underline;
 }
@@ -31,8 +41,27 @@
 }
 
 p {
-    font-size: 3vh;
+    font-size: 2.5vh;
     line-height: 1.5;
+    text-align: justify;
+}
+
+@media (max-width: 840px) {
+    #title {
+        font-size: 3vh;
+        padding-bottom: 0;
+    }
+    p, li {
+        font-size: 1.5vh;
+    }
+    .postImg{
+        width: 25vh;
+        padding-right: 1.9vh;
+        margin-bottom: 50vh;
+    }
+    li {
+        margin-left: 1.8vh;
+    }
 }
 
 @media only screen and (max-width: 550px) {
@@ -47,6 +76,7 @@ p {
     .postImg {
         width: 75vmin;
         border-radius: 2vh;
+        margin-bottom: 0;
     }
     #botaovoltar {
         transform: translateX(-3vh);

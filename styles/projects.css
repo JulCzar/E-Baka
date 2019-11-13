@@ -14,3 +14,14 @@ figure {
 .legendas {
     margin: auto 10vh;
 }
+
+@media (max-width: 840px) {
+    .projetos {
+        height: auto;
+        width: 77vmin;
+        margin: auto 5vh auto 5vh;
+        border-radius: var(--bordaRedonda);
+        border: 5px solid var(--roxo);
+    }
+    
+}

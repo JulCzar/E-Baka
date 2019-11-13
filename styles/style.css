@@ -17,6 +17,7 @@
 body {
     background-image: linear-gradient(#85739c, #9f91ad, #85739c);
     background-attachment: fixed;
+    transition-duration: .5s;
 }
 
 
@@ -34,7 +35,6 @@ body {
 /* MENU DE NAVEGAÇÃO MOBILE */
 
 #navMob {
-    transition-duration: .5s;
     display: none;
     z-index: 9999;
 }
